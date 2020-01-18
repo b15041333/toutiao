@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>拴蛋头条</title>
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand"></a>
+            </div>
+            <!-- visible-xs-inline-block来自bootstrap，表示超小尺寸下显示为inline-block -->
+            <!-- 对该id默认设置display:none;但是bootstrap中display优先级更高 -->
+            <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">显示菜单</label>
+            <!-- 使用checkbox是因为这种组件可以记录状态 -->
+            <input type="checkbox" id="toggle-checkbox" class="hidden">
+            <!-- 窗口小于xs时，隐藏主导航 -->
+            <div class="hidden-xs">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="#">国内</a></li>
+                    <li><a href="#">国际</a></li>
+                    <li><a href="#">社会</a></li>
+                    <li><a href="#">数读</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="signup.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- 窗口小于xs时，隐藏左侧边栏 -->
+            <div class="hidden-xs">
+                <div class="col-sm-2">
+                    <div class="list-group side-bar">
+                        <a href="" class="list-group-item active">推荐</a>
+                        <a href="" class="list-group-item">图片</a>
+                        <a href="" class="list-group-item">科技</a>
+                        <a href="" class="list-group-item">娱乐</a>
+                        <a href="" class="list-group-item">游戏</a>
+                        <a href="" class="list-group-item">体育</a>
+                        <a href="" class="list-group-item">财经</a>
+                        <a href="" class="list-group-item">更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="news-list">
+                    <!-- clearfix是bootstrap自带清楚浮动的类 -->
+                    <div class="news-list-item clearfix">
+                        <div class="col-xs-5">
+                            <img src="img/news1.jpg" alt="news1.jpg">
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="https://www.toutiao.com/a6782090589807575566/" class="title">中外科学家联合观测 2019年全球海洋温度再创新高</a>
+                            <div class="info">
+                                <span class="avatar"><img src="img/avatar1.jpg"></span>
+                                <span>新华社</span> ·
+                                <span>1k评论</span> ·
+                                <span>1分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-list">
+                    <!-- clearfix是bootstrap自带清楚浮动的类 -->
+                    <div class="news-list-item clearfix">
+                        <div class="col-xs-5">
+                            <img src="img/news2.jpg" alt="news2.jpg">
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="https://www.toutiao.com/a6782188860823568908/" class="title">美媒发布世界强国榜单 中国第三</a>
+                            <div class="info">
+                                <span class="avatar"><img src="img/avatar2.jpg"></span>
+                                <span>环球时报</span> ·
+                                <span>3k评论</span> ·
+                                <span>5分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-list">
+                    <!-- clearfix是bootstrap自带清楚浮动的类 -->
+                    <div class="news-list-item clearfix">
+                        <div class="col-xs-5">
+                            <img src="img/news3.jpg" alt="news3.jpg">
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="https://www.toutiao.com/a6782128511093047822/" class="title">成龙李宁分享35年前后合影对比，感叹“身材依旧”</a>
+                            <div class="info">
+                                <span class="avatar"><img src="img/avatar3.jpg"></span>
+                                <span>新京报</span> ·
+                                <span>1k评论</span> ·
+                                <span>7分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-list">
+                    <!-- clearfix是bootstrap自带清楚浮动的类 -->
+                    <div class="news-list-item clearfix">
+                        <div class="col-xs-5">
+                            <img src="img/news4.jpg" alt="news4.jpg">
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="https://www.toutiao.com/a6781981501203415556/" class="title">特斯拉：100万英里超级电池来了</a>
+                            <div class="info">
+                                <span class="avatar"><img src="img/avatar4.jpg"></span>
+                                <span>中国电力报</span> ·
+                                <span>50评论</span> ·
+                                <span>15分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-list">
+                    <!-- clearfix是bootstrap自带清楚浮动的类 -->
+                    <div class="news-list-item clearfix">
+                        <div class="col-xs-5">
+                            <img src="img/news5.jpg" alt="news5.jpg">
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="" class="title">又发现一个地球2.0？它有哪些“资本”可与地球相提并论？</a>
+                            <div class="info">
+                                <span class="avatar"><img src="img/avatar5.jpg"></span>
+                                <span>科技日报</span> ·
+                                <span>3k评论</span> ·
+                                <span>30分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-list">
+                    <!-- clearfix是bootstrap自带清楚浮动的类 -->
+                    <div class="news-list-item clearfix">
+                        <div class="col-xs-5">
+                            <img src="img/news6.jpg" alt="news6.jpg">
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="https://www.toutiao.com/a6780097337462096398/" class="title">飞机的航线为什么不是直的，非得绕个大圈？</a>
+                            <div class="info">
+                                <span class="avatar"><img src="img/avatar6.jpg"></span>
+                                <span>新华网客户端</span> ·
+                                <span>2k评论</span> ·
+                                <span>40分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="search-bar">
+                    <input type="search" class="form-control" placeholder="搜一下">
+                </div>
+                <!-- 栅格是带浮动的，如果不在母元素上清除浮动，那么母元素的背景色不会生效 -->
+                <div class="side-bar-card flag clearfix">
+                    <div class="col-xs-4    ">
+                        <img src="img/inform.png">
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="text-lg">有害信息举报专区</div>
+                        <div class="text-tel">举报电话：12377</div>
+                    </div>
+                </div>
+
+                <div class="side-bar-card">
+                    <div class="card-title">24小时热闻</div>
+                    <div class="card-body">
+                        <div class="list">
+                            <div class="item">
+                                <div class="title" onclick="window.location='https://www.toutiao.com/a6782843407388639755';">大航海掩藏的罪恶：船员看似坚毅皆为利往，哥伦布终被欲望埋葬</div>
+                                <div class="desc">1k阅读 44评论</div>
+                            </div>
+                            <div class="item">
+                                <div class="title" onclick="window.location='https://www.toutiao.com/a6782915459344761348/';">侠客岛：闭馆日大奔开进故宫，谁给的特权？</div>
+                                <div class="desc">221w阅读 9k评论</div>
+                            </div>
+                            <div class="item">
+                                <div class="title" onclick="window.location='https://3w.huanqiu.com/a/c36dc8/9CaKrnKoWYS?agt=20&tt_group_id=6783085925560746504';">特鲁多：加政府将向加籍遇难乘客家属每人提供2.5万加元赔偿</div>
+                                <div class="desc">5w阅读 2k评论</div>
+                            </div>  
+                            <div class="item">
+                                <div class="title" onclick="window.location='https://m.haiwainet.cn/ttc/3541083/2020/0118/content_31702088_1.html?tt_group_id=6783046589704307207';">美国寄往香港的邮包，发现手枪和500多发子弹</div>
+                                <div class="desc">3w阅读 309评论</div>
+                            </div>
+                            <div class="item">
+                                <div class="title" onclick="window.location='https://3w.huanqiu.com/a/c36dc8/3wfGxjFLXOS?agt=20&tt_group_id=6783102523096957447';">俄专家：库兹涅佐夫号还能用很久 再建新航母或部署至太平洋</div>
+                                <div class="desc">4.5w阅读 2k评论</div>
+                            </div>
+                            <div class="item">
+                                <div class="title" onclick="window.location='https://www.ixigua.com/i6783062124051563012/';">现场！孟晚舟在加拿大再次出庭 将就美国指控罪名等展开庭审</div>
+                                <div class="desc">131w阅读 6k评论</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">©1999-2020 西安拴蛋头条网络技术有限公司 
+    </div>
+</body>
+</html>

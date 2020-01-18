@@ -1,0 +1,20 @@
+.container-small{
+    max-width: 500px;
+}
+
+.btn-primary{
+    background:#ea0c3c;
+    border-color:#db0d3a;
+}
+
+/* hover时使其在主色调的基础上更深一点 */
+.btn-primary:hover{
+    background:#d50c37;
+    border-color:#d50c37;
+}
+
+
+.container .form-group .btn.btn-primary:focus{
+    background:#d50c37;
+    border-color:#d50c37; 
+}

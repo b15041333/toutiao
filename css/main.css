@@ -1,0 +1,161 @@
+body{
+    background:#fff;
+}
+
+img{
+    /* 以块级元素显示，限制图片大小 */
+    display:block;
+    /* 最大宽度不能超过母元素 */
+    max-width:100%;
+    border-radius:3px;
+}
+
+a:hover{
+    /* 覆盖掉a标签悬停下划线的效果 */
+    text-decoration:none;
+}
+
+.navbar-brand{
+    /* 扩充bootstrap的样式 */
+    /* jpg图片有白色背景，是因为jpg没有透明通道，而png有 */
+    background-image:url(../img/logo.png);
+    width:50px;
+    background-size:75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* 用自己添加的side-bar作为一个限定 */
+/* 只修改.sidebar下的.list-group-item，加入别处用到list-group-item则不会受影响 */
+.side-bar .list-group-item{
+    /* 除去其边框 */
+    border:0;
+    /* 3px的圆角 */
+    border-radius:3px;
+    margin-bottom:1px;
+}
+
+.side-bar .list-group-item.active{
+    background-color:#ea0c3c;
+}
+
+.news-list-item{
+    padding-top:5px;
+    padding-bottom:5px;
+    border-bottom:1px solid #eee;
+}
+
+.news-list-item .title{
+    /* 将a显示为block */
+    display:block;
+    color:#444;
+    font-size:18px;
+    font-weight: bold;
+    /* 行高1.7倍 */
+    line-height: 1.7;
+    margin-bottom:8px;
+}
+
+.news-list-item .title:hover{
+    /* 悬停标题变色 */
+    color:#337ab7;
+}
+
+.news-list-item .info{
+    color:#888;
+}
+
+.avatar{
+    /* 使得avatar与同级元素同行 */
+    display:inline-block;
+}
+
+.avatar img{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin-right:3px;
+}
+
+/* 在正常card下padding-top为10px，在有害信息举报那部分，其padding为20px，加一个flag类作以区分 */
+.side-bar-card{
+    background:rgba(0,0,0,.05);
+    margin-top:15px;
+    padding:10px 0;
+}
+
+.side-bar-card.flag{
+    padding:20px 0;
+}
+
+.side-bar-card .col-xs-8{
+    padding-left:0;
+    padding-right:0;
+}
+
+.side-bar-card .text-lg{
+    font-size:100%;
+}
+
+.side-bar-card .text-tel{
+    font-size:80%;
+}
+
+.side-bar-card .card-title,
+.side-bar-card .card-body .list .item{
+    padding:10px 15px;
+}
+
+.side-bar-card .card-title{
+    font-size:150%;
+    font-weight:bold;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.side-bar-card .card-body .list .item:hover{
+    background:rgba(0,0,0,0.05);
+    cursor:pointer;
+}
+
+.sidebar-card .card-body .list .item a{
+    color:#000;
+    text-decoration: none;
+    padding-bottom:5px;
+}
+
+.card-body .list .item .desc{
+    color:#999;
+    font-size:95%;
+}
+ 
+.side-bar-card{
+    border-radius:3px;
+}
+
+.footer{
+    margin:15px auto;
+    padding:8px 0;
+    text-align:center;
+    color:#999;
+}
+
+/* 当toggle-checkbox被勾选时，将其兄弟div设置为显示 */
+#toggle-checkbox:checked ~ div{
+    /* 不加!important的话优先级将低于bootstrap的 */
+    display:block !important;
+}
+
+#toggle-label{
+    display:none;
+    position:absolute;
+    right:15px;
+    top:15px;
+    font-size:13px;
+    color:#666;
+}
+
+#toggle-label:hover{
+    color:#333;
+}

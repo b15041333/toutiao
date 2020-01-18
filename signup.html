@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css"> 
+    <title>拴蛋头条</title>
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand"></a>
+            </div>
+            <!-- visible-xs-inline-block来自bootstrap，表示超小尺寸下显示为inline-block -->
+            <!-- 对该id默认设置display:none;但是bootstrap中display优先级更高 -->
+            <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">显示菜单</label>
+            <!-- 使用checkbox是因为这种组件可以记录状态 -->
+            <input type="checkbox" id="toggle-checkbox" class="hidden">
+            <!-- 窗口小于xs时，隐藏主导航 -->
+            <div class="hidden-xs">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">国内</a></li>
+                    <li><a href="#">国际</a></li>
+                    <li><a href="#">社会</a></li>
+                    <li><a href="#">数读</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                    <li class="active"><a href="signup.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-small">
+        <h2>注册</h2>
+        <form>
+            <div class="form-group">
+                <label>手机：</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>验证码：</label>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <div class="btn btn-default">获取验证码</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">注册</button>
+            </div>
+            <div class="form-group">
+                * 注册即代表你同意<a href="#">《本站服务条款》</a>
+            </div>
+        </form>
+    </div>
+    <div class="footer">©1999-2020 西安拴蛋头条网络技术有限公司 
+    </div>
+</body>
+</html>
